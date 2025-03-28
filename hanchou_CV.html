@@ -2,94 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr. Han-Chou Lin | Personal Webpage</title>
+  <title>Dr. Han-Chou Lin | Personal Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      background: #00509e;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #003f7f;
+    }
+
+    .content {
       padding: 2rem;
-      background-color: #f8f9fa;
     }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .contact {
-      background: #ecf0f1;
-      padding: 1rem;
-      border-radius: 5px;
+
+    h2 {
+      color: #003366;
     }
   </style>
 </head>
 <body>
 
-  <h1>Dr. Han-Chou Lin</h1>
-  <h2>Associate Professor, Department of Big Data Management and Application</h2>
-  <p>National Ilan University, Taiwan</p>
+  <header>
+    <h1>Dr. Han-Chou Lin</h1>
+    <p>Asistant Professor, National Ilan University | Big Data Management and Application</p>
+  </header>
 
-  <div class="section contact">
-    <h2>Contact Information</h2>
-    <p><strong>Email:</strong> hanchoulin@gmail.com</p>
-    <p><strong>Mobile:</strong> +886-919-283755</p>
-    <p><strong>Phone:</strong> 03-9281966</p>
-    <p><strong>Address:</strong> Zhongshan Rd. Sec. 5, Yilan City, Yilan County, Taiwan</p>
-  </div>
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>Ph.D. in Information Management, National Chengchi University</li>
-      <li>MBA in Business Management, National Ilan University</li>
-      <li>B.S. in Information and Computer Education, National Taiwan Normal University</li>
-    </ul>
-  </div>
+  <div class="content">
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>Dr. Han-Chou Lin is currently an Associate Professor in the Big Data Management and Application program at National Ilan University. His research focuses on predictive models, data mining, AI applications, and information management.</p>
+    </section>
 
-  <div class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Data Mining & Text Mining</li>
-      <li>Financial Time Series Forecasting</li>
-      <li>Prediction Models & Optimization</li>
-      <li>Information Management</li>
-      <li>Artificial Intelligence Applications</li>
-    </ul>
-  </div>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Ph.D., Information Management, National Chengchi University</li>
+        <li>MBA, Business Management, National Ilan University</li>
+        <li>B.S., Information & Computer Education, National Taiwan Normal University</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Teaching Expertise</h2>
-    <ul>
-      <li>Programming Languages</li>
-      <li>IoT (Internet of Things)</li>
-      <li>AI for Business</li>
-      <li>Business Database Management</li>
-      <li>Forecasting & Decision Making</li>
-      <li>Software Applications</li>
-      <li>Knowledge Management</li>
-      <li>Web Development</li>
-    </ul>
-  </div>
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Data Mining & Text Mining</li>
+        <li>Time Series Forecasting</li>
+        <li>Artificial Intelligence</li>
+        <li>Information Management</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Awards and Recognition</h2>
-    <ul>
-      <li>Best Paper Award – 2009 Financial Innovation Conference</li>
-      <li>Best Digital Learning Course – National Chengchi University (2013, 2014)</li>
-      <li>Excellent Paper – iCIMKC 2024, Innovation & Knowledge Community Conference</li>
-      <li>Gold Safety Award – Ministry of Transportation (Advisor, 2024)</li>
-    </ul>
-  </div>
+    <section id="teaching">
+      <h2>Teaching Subjects</h2>
+      <ul>
+        <li>Introduction to AI for Business</li>
+        <li>Programming Languages</li>
+        <li>IoT Fundamentals</li>
+        <li>Business Forecasting and Decision Making</li>
+        <li>Database Systems</li>
+        <li>Knowledge Management</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Student Mentorship Achievements</h2>
-    <ul>
-      <li>1st Place – ESG Visualization System, NIU Project Competition 2024</li>
-      <li>2nd Place – Freedom Index Correlation Study, NIU Project 2024</li>
-      <li>1st Place – Smart Health Risk Prediction, NIU Project 2023</li>
-    </ul>
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>Selected conference and journal papers include topics on exchange rate forecasting, ESG data analysis using machine learning, and consumer behavior modeling. <br>
+      <em>For a full list of publications, please contact Dr. Lin directly.</em></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> hanchoulin@gmail.com<br>
+         <strong>Mobile:</strong> +886-919-283755<br>
+         <strong>Address:</strong> Zhongshan Rd. Sec. 5, Yilan City, Taiwan
+      </p>
+    </section>
   </div>
 
 </body>
