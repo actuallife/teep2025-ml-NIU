@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Dr. Han-Chou Lin | Personal Website</title>
   <style>
     body {
@@ -14,21 +14,32 @@
     header {
       background: #003366;
       color: white;
-      padding: 1rem 2rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 5px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
     nav {
       background: #00509e;
       overflow: hidden;
+      text-align: center;
     }
 
     nav a {
-      float: left;
-      display: block;
+      display: inline-block;
       color: #fff;
-      text-align: center;
       padding: 14px 20px;
       text-decoration: none;
+      transition: background 0.3s;
     }
 
     nav a:hover {
@@ -37,154 +48,136 @@
 
     .content {
       padding: 2rem;
+      max-width: 960px;
+      margin: auto;
     }
 
     h2 {
       color: #003366;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="https://ccsys.niu.edu.tw/MvcTeam/TeachingPortfolio/TchrPhoto/hanchou" alt="Dr. Han-Chou Lin">
     <h1>Dr. Han-Chou Lin</h1>
-    <p>Asistant Professor, National Ilan University | Big Data Management and Application</p>
+    <p>Assistant Professor, National Ilan University<br>Big Data Management and Application Program</p>
   </header>
 
   <nav>
-    <a href="#profile">Profile</a>
-    <a href="#education">Education</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+    <a href="#" onclick="showSection('profile')">Profile</a>
+    <a href="#" onclick="showSection('education')">Education</a>
+    <a href="#" onclick="showSection('research')">Research</a>
+    <a href="#" onclick="showSection('teaching')">Teaching</a>
+    <a href="#" onclick="showSection('publications')">Publications</a>
+    <a href="#" onclick="showSection('teep')">TEEP 2025</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
   </nav>
 
   <div class="content">
-    <section id="profile">
+    <section id="profile" class="page-section">
       <h2>Profile</h2>
-      <p>Dr. Han-Chou Lin is currently an Associate Professor in the Big Data Management and Application program at National Ilan University. His research focuses on predictive models, data mining, AI applications, and information management.</p>
+      <p>Dr. Han-Chou Lin is an Assistant Professor at the Department of Big Data Management and Application, National Ilan University. He has extensive experience in teaching programming, artificial intelligence, data mining, and database systems. He also actively participates in academic-industry collaborative projects and talent cultivation initiatives.</p>
     </section>
 
-    <section id="education">
+    <section id="education" class="page-section" style="display:none;">
       <h2>Education</h2>
       <ul>
-        <li>Ph.D., Information Management, National Chengchi University</li>
-        <li>MBA, Business Management, National Ilan University</li>
-        <li>B.S., Information & Computer Education, National Taiwan Normal University</li>
+        <li>Ph.D., Information Management, National Chengchi University (2015)</li>
+        <li>MBA, Business Management, National Ilan University (2007)</li>
+        <li>B.S., Information & Computer Education, National Taiwan Normal University (2004)</li>
       </ul>
     </section>
 
-    <section id="research">
+    <section id="research" class="page-section" style="display:none;">
       <h2>Research Interests</h2>
       <ul>
-        <li>Data Mining & Text Mining</li>
-        <li>Time Series Forecasting</li>
-        <li>Artificial Intelligence</li>
-        <li>Information Management</li>
+        <li>Data Mining and Text Mining</li>
+        <li>Time Series Forecasting and Prediction Models</li>
+        <li>Financial Data Analysis and ESG Impact Studies</li>
+        <li>Artificial Intelligence and Machine Learning Applications</li>
+        <li>Information Management Systems</li>
       </ul>
     </section>
 
-    <section id="teaching">
+    <section id="teaching" class="page-section" style="display:none;">
       <h2>Teaching Subjects</h2>
       <ul>
-        <li>Introduction to AI for Business</li>
-        <li>Programming Languages</li>
-        <li>IoT Fundamentals</li>
+        <li>Introduction to Artificial Intelligence for Business</li>
+        <li>Programming Languages (Python, Java)</li>
+        <li>Internet of Things (IoT) Fundamentals</li>
         <li>Business Forecasting and Decision Making</li>
-        <li>Database Systems</li>
+        <li>Database Management Systems</li>
         <li>Knowledge Management</li>
+        <li>Software Applications</li>
       </ul>
     </section>
 
-<section id="publications">
-  <h2>Publications</h2>
+    <section id="publications" class="page-section" style="display:none;">
+      <h2>Publications</h2>
 
-  <h3>Journal Papers</h3>
-  <ul>
-    <li><strong>An Integraged Model Combined ARIMA, EMD with SVR for Stock Indices Forecasting</strong><br>
-      <em>International Journal on Artificial Intelligence Tools</em> (SCI), 2015. First Author: Yang, Heng-Li</li>
+      <h3>Journal Papers</h3>
+      <ul>
+        <li><strong>An Integraged Model Combined ARIMA, EMD with SVR for Stock Indices Forecasting</strong><br>
+          <em>International Journal on Artificial Intelligence Tools</em> (SCI), 2015. First Author: Yang, Heng-Li</li>
+        <li><strong>Applying the Hybrid Model of EMD, PSR, and ELM to Exchange Rates Forecasting</strong><br>
+          <em>Computational Economics</em> (SSCI), 2015. First Author: Yang, Heng-Li</li>
+        <li><strong>Integrating EMD, Chaos-based Neural Network and PSO for Financial Time Series Forecasting</strong><br>
+          <em>Journal of Economic Computation and Economic Cybernetics Studies and Research</em> (SSCI), 2015, Vol. 49(1), pp. 185–202</li>
+        <li><strong>Combining Artificial Intelligence with Non-linear Data Processing Techniques for Forecasting Exchange Rate Time Series</strong><br>
+          <em>International Journal of Digital Content and its Application</em> (EI), 2012</li>
+        <li><strong>The Analysis of Asia Travel：Tourism Demand Forecasting with an EMD-based Random Forest</strong><br>
+          <em>Sustainable Development and Management Strategies</em>, 2011. First Author: Lin, Han-Chou</li>
+      </ul>
 
-    <li><strong>Applying the Hybrid Model of EMD, PSR, and ELM to Exchange Rates Forecasting</strong><br>
-      <em>Computational Economics</em> (SSCI), 2015. First Author: Yang, Heng-Li</li>
+      <h3>Conference Papers</h3>
+      <ul>
+        <li><strong>Predicting the Impact of ESG Factors on Financial Outcomes Using Machine Learning</strong> (Best Paper Candidate), iCIMKC 2024</li>
+        <li><strong>從興趣與科系選擇之契合度看大學生職能差異之研究</strong> (Excellent Paper), 2022 南區校務研究成果展</li>
+        <li><strong>Prediction on Stock Market Using EMD and Random Forest</strong>, IC3 2019</li>
+        <li><strong>Exploring Green Product Intentions Using Data Mining</strong>, 2019 北商大論壇</li>
+        <li><strong>Exchange Rate Forecasting via Hybrid Models</strong>, ICEB 2014, ICMSS 2011, NCM 2011, and others</li>
+      </ul>
+    </section>
 
-    <li><strong>Integrating EMD, Chaos-based Neural Network and PSO for Financial Time Series Forecasting</strong><br>
-      <em>Journal of Economic Computation and Economic Cybernetics Studies and Research</em> (SSCI), 2015, Vol. 49(1), pp. 185–202. First Author: Yang, Heng-Li</li>
+    <section id="teep" class="page-section" style="display:none;">
+      <h2>TEEP 2025 Machine Learning & Industry-Academia Collaboration Program</h2>
+      <p>Dr. Lin is actively involved in the <strong>TEEP 2025 (Taiwan Experience Education Program)</strong> hosted by National Ilan University, focusing on <strong>Machine Learning and Industry-Academia Collaboration</strong>.</p>
+      <p>The program offers international students hands-on experience with real-world problems, supervised projects with local businesses, and advanced training in AI, big data, and applied analytics. Dr. Lin serves as an academic mentor and project advisor for this initiative.</p>
+      <p>For more information, visit the <a href="https://teep.studyinTaiwan.org/" target="_blank">official TEEP website</a>.</p>
+    </section>
 
-    <li><strong>Combining Artificial Intelligence with Non-linear Data Processing Techniques for Forecasting Exchange Rate Time Series</strong><br>
-      <em>International Journal of Digital Content and its Application</em> (EI), 2012. First Author: Yang, Heng-Li</li>
-
-    <li><strong>The Analysis of Asia Travel：Tourism Demand Forecasting with an EMD-based Random Forest</strong><br>
-      <em>Sustainable Development and Management Strategies</em>, 2011. First Author: Lin, Han-Chou; Co-authors: Wang, Chih-Hung, Yang, Jiann-Min</li>
-  </ul>
-
-  <h3>Conference Papers</h3>
-  <ul>
-    <li><strong>Predicting the Impact of ESG Factors on Financial Outcomes Using Machine Learning</strong> (Best Paper Candidate)<br>
-      <em>iCIMKC 2024</em>, Lin, Han-Chou; Lu, Kuan-Yi</li>
-
-    <li><strong>從興趣與科系選擇之契合度看大學生職能差異之研究</strong> (Excellent Paper)<br>
-      <em>2022 南區校務研究成果展</em>, 陳谷劦, 徐培真, 徐康華</li>
-
-    <li><strong>Prediction on Stock Market Adopting EMD and Chaos-based Random Forest Techniques</strong><br>
-      <em>IC3 2019</em>, Lin, Han-Chou; Ching-Chiang Yeh</li>
-
-    <li><strong>Exploring Green Product Usage Intentions Using Data Mining</strong><br>
-      <em>2019 北商大論壇</em>, 林漢洲 et al.</li>
-
-    <li><strong>旅遊需求預測結合 ARIMA 與 BPNN</strong><br>
-      <em>2018 海峽兩岸資訊管理研討會</em>, 楊亨利, 林漢洲</li>
-
-    <li><strong>結合ARIMA與SVM之股價預測模型</strong><br>
-      <em>2017 海峽兩岸資訊管理研討會</em>, 楊亨利, 林漢洲</li>
-
-    <li><strong>Predicting Exchange Rates by the Combination of Linear and Nonlinear Models</strong><br>
-      <em>2016 海峽兩岸資訊管理研討會</em>, Lin, Han-Chou; Yang, Heng-Li</li>
-
-    <li><strong>Two-Stage Model for Exchange Rate Forecasting</strong> (Ministry of Science and Tech. funded)<br>
-      <em>ICEB 2014</em>, Yang, Heng-Li; Lin, Han-Chou</li>
-
-    <li><strong>A Productivity Review Study on Theory of Reasoned Action Literature Using Bibliometric</strong><br>
-      <em>ICMSS 2011</em>, Lin, Han-Chou; Wu, Chih-Lun; Yang, Jiann-Min</li>
-
-    <li><strong>Applying EMD-based Neural Network to Forecast NTD/USD</strong><br>
-      <em>NCM 2011</em>, Yang, Heng-Li; Lin, Han-Chou</li>
-
-    <li><strong>Forecasting Exchange Rate using HHT and BPNN with PSO</strong><br>
-      <em>ICMIA 2011</em>, Yang, Heng-Li; Huang, Stevenson</li>
-
-    <li><strong>A Productivity Review Study on TRA and TAM Literature</strong><br>
-      <em>ICIS 2010</em>, Wu, Chih-Lun; Yang, Jiann-Min</li>
-
-    <li><strong>Financial Forecasting with Hybrid Model of PSR, HHT, and NN</strong><br>
-      <em>2009 金融創新研討會</em>, Yeh, Ching-Chiang; Chang, Betty; Lin, Han-Chou</li>
-
-    <li><strong>Hybrid Model Using PSR and Random Forest for Stock Index</strong><br>
-      <em>COFAECA 2009</em>, Yeh, Ching-Ching; Chang, Betty; Lin, Han-Chou</li>
-
-    <li><strong>Forecasting with PSR, HHT and SVR</strong><br>
-      <em>IMS 2009</em>, Chang, Betty; Yeh, Ching-Chiang; Lin, Han-Chou</li>
-
-    <li><strong>Forecasting with PSR, ICA and SVR</strong><br>
-      <em>ISF 2009</em>, Yeh, Ching-Ching; Chang, Betty; Lin, Han-Chou</li>
-
-    <li><strong>Integrating Chaos Theory, HHT, and RF for Financial Forecasting</strong><br>
-      <em>System Science Symposium 2009</em>, Lin, Han-Chou; Yeh, Ching-Ching; Chang, Betty</li>
-
-    <li><strong>Integrating PSR, LLE and SVR for Stock Index Forecasting</strong><br>
-      <em>2009 Decision-Making Conference</em>, Yeh, Ching-Ching; Chang, Betty; Lin, Han-Chou</li>
-  </ul>
-</section>
-
-
-    <section id="contact">
+    <section id="contact" class="page-section" style="display:none;">
       <h2>Contact</h2>
-      <p><strong>Email:</strong> hanchoulin@gmail.com<br>
-         <strong>Mobile:</strong> +886-919-283755<br>
-         <strong>Address:</strong> Zhongshan Rd. Sec. 5, Yilan City, Taiwan
+      <p>
+        <strong>Email:</strong> hanchoulin@gmail.com<br>
+        <strong>Mobile:</strong> +886-919-283755<br>
+        <strong>Phone:</strong> 03-9281966<br>
+        <strong>Address:</strong> Zhongshan Rd. Sec. 5, Yilan City, Yilan County, Taiwan
       </p>
     </section>
   </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.page-section');
+      sections.forEach(sec => sec.style.display = 'none');
+      const target = document.getElementById(sectionId);
+      if (target) target.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Show profile by default
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('profile');
+    });
+  </script>
 
 </body>
 </html>
