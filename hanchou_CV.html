@@ -1,232 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dr. Han-Chou Lin | Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Han-Chou Lin - Personal Profile</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background-color: #f4f4f4;
     }
-
     header {
-      background: #003366;
+      background-color: #004466;
       color: white;
-      padding: 2rem;
+      padding: 20px;
       text-align: center;
     }
-
-    header img {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 5px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
     nav {
-      background: #00509e;
-      overflow: hidden;
-      text-align: center;
+      background: #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-
     nav a {
-      display: inline-block;
-      color: #fff;
-      padding: 14px 20px;
+      color: #004466;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: bold;
+      cursor: pointer;
     }
-
-    nav a:hover {
-      background-color: #003f7f;
-    }
-
     .content {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
+      padding: 20px;
+      display: none;
     }
-
-    h2 {
-      color: #003366;
-      margin-top: 2rem;
+    .active {
+      display: block;
     }
-
-    ul {
-      padding-left: 1.2rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://ccsys.niu.edu.tw/MvcTeam/TeachingPortfolio/TchrPhoto/hanchou" alt="Dr. Han-Chou Lin">
-    <h1>Dr. Han-Chou Lin</h1>
-    <p>Assistant Professor, National Ilan University<br>Big Data Management and Application Program</p>
+    <h1>Han-Chou Lin</h1>
+    <p>Personal Profile</p>
   </header>
-
   <nav>
-    <a href="#" onclick="showSection('profile')">Profile</a>
-    <a href="#" onclick="showSection('education')">Education</a>
-    <a href="#" onclick="showSection('research')">Research</a>
-    <a href="#" onclick="showSection('teaching')">Teaching</a>
-    <a href="#" onclick="showSection('publications')">Publications</a>
-    <a href="#" onclick="showSection('teep')">TEEP 2025</a>
-    <a href="#" onclick="showSection('contact')">Contact</a>
+    <a onclick="showContent('education')">Education</a>
+    <a onclick="showContent('experience')">Experience</a>
+    <a onclick="showContent('honors')">Honors</a>
+    <a onclick="showContent('teaching')">Teaching</a>
+    <a onclick="showContent('research')">Research</a>
+    <a onclick="showContent('patents')">Patents</a>
   </nav>
 
-  <div class="content">
-    <section id="profile" class="page-section">
-      <h2>Profile</h2>
-      <p>Dr. Han-Chou Lin is an Assistant Professor at the Department of Big Data Management and Application, National Ilan University. He has extensive experience in teaching programming, artificial intelligence, data mining, and database systems. He also actively participates in academic-industry collaborative projects and talent cultivation initiatives.</p>
-    </section>
+  <div id="education" class="content active">
+    <h2>Education</h2>
+    <table>
+      <tr><th>School</th><th>Major</th><th>Degree</th><th>Country</th></tr>
+      <tr><td>National Ilan University</td><td>Graduate Institute of Management</td><td>Master</td><td>ROC</td></tr>
+      <tr><td>National Chengchi University</td><td>Department of MIS</td><td>Ph.D.</td><td>ROC</td></tr>
+      <tr><td>National Taiwan Normal University</td><td>Information & Education</td><td>Bachelor</td><td>ROC</td></tr>
+    </table>
+  </div>
 
-    <section id="education" class="page-section" style="display:none;">
-      <h2>Education</h2>
-      <ul>
-        <li>Ph.D., Information Management, National Chengchi University (2015)</li>
-        <li>MBA, Business Management, National Ilan University (2007)</li>
-        <li>B.S., Information & Computer Education, National Taiwan Normal University (2004)</li>
-      </ul>
-    </section>
+  <div id="experience" class="content">
+    <h2>Experience</h2>
+    <table>
+      <tr><th>Organization</th><th>Department</th><th>Position</th></tr>
+      <tr><td>Fo Guang University</td><td>General Education</td><td>Lecturer</td></tr>
+      <tr><td>Council of Indigenous Peoples</td><td>Digital Transformation Program</td><td>Consultant</td></tr>
+      <tr><td>National Chengchi University</td><td>Department of MIS</td><td>Lecturer</td></tr>
+      <tr><td>National Taipei University of Business</td><td>Business Administration</td><td>Project Assistant Professor</td></tr>
+      <tr><td>Jiatong Co., Ltd.</td><td>Management</td><td>General Manager</td></tr>
+    </table>
+  </div>
 
-    <section id="research" class="page-section" style="display:none;">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Data Mining and Text Mining</li>
-        <li>Time Series Forecasting and Prediction Models</li>
-        <li>Financial Data Analysis and ESG Impact Studies</li>
-        <li>Artificial Intelligence and Machine Learning Applications</li>
-        <li>Information Management Systems</li>
-      </ul>
-    </section>
+  <div id="honors" class="content">
+    <h2>Honors</h2>
+    <table>
+      <tr><th>Type</th><th>Date</th><th>Title</th><th>Country</th><th>Awarded by</th></tr>
+      <tr><td>External</td><td>2016/04/20</td><td>Outstanding e-Learning Course (Software Application)</td><td>ROC</td><td>NCCU</td></tr>
+      <tr><td>External</td><td>2015/04/20</td><td>Outstanding e-Learning Course (Software Application)</td><td>ROC</td><td>NCCU</td></tr>
+      <tr><td>External</td><td>2009/06/05</td><td>Best Paper in Finance Innovation Conference</td><td>ROC</td><td>Shih Chien University</td></tr>
+    </table>
+  </div>
 
-    <section id="teaching" class="page-section" style="display:none;">
-      <h2>Teaching Subjects</h2>
-      <ul>
-        <li>Introduction to Artificial Intelligence for Business</li>
-        <li>Programming Languages (Python, Java)</li>
-        <li>Internet of Things (IoT) Fundamentals</li>
-        <li>Business Forecasting and Decision Making</li>
-        <li>Database Management Systems</li>
-        <li>Knowledge Management</li>
-        <li>Software Applications</li>
-      </ul>
-    </section>
+  <div id="teaching" class="content">
+    <h2>Teaching</h2>
+    <table>
+      <tr><th>Semester</th><th>Course Title</th></tr>
+      <tr><td>1132</td><td>Introduction to AI</td></tr>
+      <tr><td>1132</td><td>Introduction to Business AI</td></tr>
+      <tr><td>1132</td><td>Business Data Forecasting and Decision-Making</td></tr>
+      <tr><td>1132</td><td>Programming</td></tr>
+      <!-- Add more rows as needed -->
+    </table>
+  </div>
 
-    <section id="publications" class="page-section" style="display:none;">
-      <h2>Publications</h2>
+  <div id="research" class="content">
+    <h2>Research</h2>
+    <p><strong>Journal Papers:</strong></p>
+    <ul>
+      <li>2015 - "An Integraged Model Combined ARIMA, EMD with SVR for Stock Indices Forecasting", SCI, IJ on AI Tools</li>
+      <li>2015 - "Applying the Hybrid Model of EMD, PSR, and ELM to Exchange Rates Forecasting", SSCI, Computational Economics</li>
+      <!-- Add more entries as needed -->
+    </ul>
+    <p><strong>Conference Papers:</strong></p>
+    <ul>
+      <li>2024 - "Predicting the Impact of ESG Factors...", iCIMKC 2024, Lin, Han-Chou</li>
+      <li>2022 - "Exploring Competency Differences...", 2022 South Alliance IR Conference</li>
+      <!-- Add more entries as needed -->
+    </ul>
+  </div>
 
-      <h3>Journal Papers</h3>
-      <ul>
-        <li><strong>An Integraged Model Combined ARIMA, EMD with SVR for Stock Indices Forecasting</strong><br>
-          <em>International Journal on Artificial Intelligence Tools</em> (SCI), 2015. First Author: Yang, Heng-Li</li>
-        <li><strong>Applying the Hybrid Model of EMD, PSR, and ELM to Exchange Rates Forecasting</strong><br>
-          <em>Computational Economics</em> (SSCI), 2015. First Author: Yang, Heng-Li</li>
-        <li><strong>Integrating EMD, Chaos-based Neural Network and PSO for Financial Time Series Forecasting</strong><br>
-          <em>Journal of Economic Computation and Economic Cybernetics Studies and Research</em> (SSCI), 2015, Vol. 49(1), pp. 185–202</li>
-        <li><strong>Combining Artificial Intelligence with Non-linear Data Processing Techniques for Forecasting Exchange Rate Time Series</strong><br>
-          <em>International Journal of Digital Content and its Application</em> (EI), 2012</li>
-        <li><strong>The Analysis of Asia Travel：Tourism Demand Forecasting with an EMD-based Random Forest</strong><br>
-          <em>Sustainable Development and Management Strategies</em>, 2011. First Author: Lin, Han-Chou</li>
-      </ul>
-
-      <h3>Conference Papers</h3>
-      <ul>
-        <li><strong>Predicting the Impact of ESG Factors on Financial Outcomes Using Machine Learning</strong> (Best Paper Candidate), iCIMKC 2024</li>
-        <li><strong>從興趣與科系選擇之契合度看大學生職能差異之研究</strong> (Excellent Paper), 2022 南區校務研究成果展</li>
-        <li><strong>Prediction on Stock Market Using EMD and Random Forest</strong>, IC3 2019</li>
-        <li><strong>Exploring Green Product Intentions Using Data Mining</strong>, 2019 北商大論壇</li>
-        <li><strong>Exchange Rate Forecasting via Hybrid Models</strong>, ICEB 2014, ICMSS 2011, NCM 2011, and others</li>
-      </ul>
-    </section>
-
-   <section id="teep" class="page-section" style="display:none;">
-  <h2>TEEP 2025 Machine Learning & Industry-Academia Collaboration Program</h2>
-  <p>The <strong>TEEP 2025 Machine Learning & Industry-Academia Collaboration Program</strong> is an international initiative offering participants hands-on experience in machine learning and data analytics. The program emphasizes practical skills, collaboration with local students and companies, and exploration of AI and data science applications in Taiwan.</p>
-
-  <h3>Program Duration</h3>
-  <p>July 1 to December 31, 2025 (minimum 5-month participation required)</p>
-
-  <h3>Program Highlights</h3>
-  <ul>
-    <li>Academic courses: Fundamentals of Machine Learning, Data Analysis for Business Applications</li>
-    <li>Collaborative projects with local university students</li>
-    <li>Internships at local data technology companies</li>
-    <li>Final presentations and project reports</li>
-  </ul>
-
-  <h3>Scholarship</h3>
-  <p>Participants will receive a monthly scholarship of NT$12,000 to support living expenses.</p>
-
-  <h3>Eligibility</h3>
-  <ul>
-    <li>Bachelor’s degree holders or current master’s students</li>
-    <li>Background in machine learning, artificial intelligence, or data analytics</li>
-  </ul>
-
-  <h3>English Language Requirement</h3>
-  <p>Vietnamese applicants must provide English proficiency certificates for visa purposes:</p>
-  <ul>
-    <li>TOEFL PBT: 385 / TOEFL iBT: 26</li>
-    <li>IELTS: 3.0</li>
-    <li>TOEIC: 375</li>
-  </ul>
-
-  <h3>Fees</h3>
-  <ul>
-    <li>Administration Fee: NT$10,000 (cash payment)</li>
-    <li>Dormitory Fee: NT$9,500 for 2–4 months; additional NT$80/day for stays over 4 months</li>
-  </ul>
-
-  <h3>Accommodation</h3>
-  <p>On-campus dormitory accommodation is available. Assistance will be provided to secure suitable housing.</p>
-
-  <h3>Contact</h3>
-  <p>
-    <strong>Dr. Han-Chou Lin</strong><br>
-    Assistant Professor<br>
-    Bachelor's Degree Program in Management and Application of Big Data<br>
-    National Ilan University<br>
-    Phone: +886-3-9357400 #7928 / +886-919283755<br>
-    Address: No. 1, Sec. 1, Shennong Rd., Yilan City, Yilan County 26047, Taiwan<br>
-    Email: hanchou@niu.edu.tw
-  </p>
-
-  <p>For more information, visit the <a href="https://teep.studyintaiwan.org/" target="_blank">official TEEP website</a>.</p>
-</section>
-
-
-    <section id="contact" class="page-section" style="display:none;">
-      <h2>Contact</h2>
-      <p>
-        <strong>Email:</strong> hanchoulin@gmail.com<br>
-        <strong>Mobile:</strong> +886-919-283755<br>
-        <strong>Phone:</strong> 03-9281966<br>
-        <strong>Address:</strong> Zhongshan Rd. Sec. 5, Yilan City, Yilan County, Taiwan
-      </p>
-    </section>
+  <div id="patents" class="content">
+    <h2>Patents</h2>
+    <table>
+      <tr><th>Type</th><th>Date</th><th>Title</th><th>Patent No.</th><th>Country</th><th>Inventors</th><th>Owner</th></tr>
+      <tr><td>Utility</td><td>2019/04/09</td><td>Blind Spot Warning Device</td><td>M584758</td><td>ROC</td><td>Lu, Lin, Wu, Ching, Lin</td><td>Ching, Ya-Chi</td></tr>
+      <tr><td>Utility</td><td>2018/08/15</td><td>Multi-function Perception Control Device</td><td>M573846</td><td>ROC</td><td>Chien, Sung, Lin, Hsu, Tseng</td><td>Fo Guang University</td></tr>
+    </table>
   </div>
 
   <script>
-    function showSection(sectionId) {
-      const sections = document.querySelectorAll('.page-section');
-      sections.forEach(sec => sec.style.display = 'none');
-      const target = document.getElementById(sectionId);
-      if (target) target.style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    function showContent(id) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
     }
-
-    // Show profile by default
-    document.addEventListener('DOMContentLoaded', () => {
-      showSection('profile');
-    });
   </script>
-
 </body>
 </html>
