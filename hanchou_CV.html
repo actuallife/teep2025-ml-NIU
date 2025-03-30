@@ -38,18 +38,15 @@
     .active {
       display: block;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
+    .item-block {
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #ddd;
+    .item-block strong {
+      display: inline-block;
+      width: 140px;
     }
   </style>
 </head>
@@ -69,71 +66,53 @@
 
   <div id="education" class="content active">
     <h2>Education</h2>
-    <table>
-      <tr><th>School</th><th>Major</th><th>Degree</th><th>Country</th></tr>
-      <tr><td>National Ilan University</td><td>Graduate Institute of Management</td><td>Master</td><td>ROC</td></tr>
-      <tr><td>National Chengchi University</td><td>Department of MIS</td><td>Ph.D.</td><td>ROC</td></tr>
-      <tr><td>National Taiwan Normal University</td><td>Information & Education</td><td>Bachelor</td><td>ROC</td></tr>
-    </table>
+    <div class="item-block"><strong>School:</strong> National Ilan University<br><strong>Major:</strong> Graduate Institute of Management<br><strong>Degree:</strong> Master<br><strong>Country:</strong> ROC</div>
+    <div class="item-block"><strong>School:</strong> National Chengchi University<br><strong>Major:</strong> Department of MIS<br><strong>Degree:</strong> Ph.D.<br><strong>Country:</strong> ROC</div>
+    <div class="item-block"><strong>School:</strong> National Taiwan Normal University<br><strong>Major:</strong> Information & Education<br><strong>Degree:</strong> Bachelor<br><strong>Country:</strong> ROC</div>
   </div>
 
   <div id="experience" class="content">
     <h2>Experience</h2>
-    <table>
-      <tr><th>Organization</th><th>Department</th><th>Position</th></tr>
-      <tr><td>Fo Guang University</td><td>General Education</td><td>Lecturer</td></tr>
-      <tr><td>Council of Indigenous Peoples</td><td>Digital Transformation Program</td><td>Consultant</td></tr>
-      <tr><td>National Chengchi University</td><td>Department of MIS</td><td>Lecturer</td></tr>
-      <tr><td>National Taipei University of Business</td><td>Business Administration</td><td>Project Assistant Professor</td></tr>
-      <tr><td>Jiatong Co., Ltd.</td><td>Management</td><td>General Manager</td></tr>
-    </table>
+    <div class="item-block"><strong>Organization:</strong> Fo Guang University<br><strong>Department:</strong> General Education<br><strong>Position:</strong> Lecturer</div>
+    <div class="item-block"><strong>Organization:</strong> Council of Indigenous Peoples<br><strong>Department:</strong> Digital Transformation Program<br><strong>Position:</strong> Consultant</div>
+    <div class="item-block"><strong>Organization:</strong> National Chengchi University<br><strong>Department:</strong> Department of MIS<br><strong>Position:</strong> Lecturer</div>
+    <div class="item-block"><strong>Organization:</strong> National Taipei University of Business<br><strong>Department:</strong> Business Administration<br><strong>Position:</strong> Project Assistant Professor</div>
+    <div class="item-block"><strong>Organization:</strong> Jiatong Co., Ltd.<br><strong>Department:</strong> Management<br><strong>Position:</strong> General Manager</div>
   </div>
 
   <div id="honors" class="content">
     <h2>Honors</h2>
-    <table>
-      <tr><th>Type</th><th>Date</th><th>Title</th><th>Country</th><th>Awarded by</th></tr>
-      <tr><td>External</td><td>2016/04/20</td><td>Outstanding e-Learning Course (Software Application)</td><td>ROC</td><td>NCCU</td></tr>
-      <tr><td>External</td><td>2015/04/20</td><td>Outstanding e-Learning Course (Software Application)</td><td>ROC</td><td>NCCU</td></tr>
-      <tr><td>External</td><td>2009/06/05</td><td>Best Paper in Finance Innovation Conference</td><td>ROC</td><td>Shih Chien University</td></tr>
-    </table>
+    <div class="item-block"><strong>Type:</strong> External<br><strong>Date:</strong> 2016/04/20<br><strong>Title:</strong> Outstanding e-Learning Course (Software Application)<br><strong>Country:</strong> ROC<br><strong>Awarded by:</strong> NCCU</div>
+    <div class="item-block"><strong>Type:</strong> External<br><strong>Date:</strong> 2015/04/20<br><strong>Title:</strong> Outstanding e-Learning Course (Software Application)<br><strong>Country:</strong> ROC<br><strong>Awarded by:</strong> NCCU</div>
+    <div class="item-block"><strong>Type:</strong> External<br><strong>Date:</strong> 2009/06/05<br><strong>Title:</strong> Best Paper in Finance Innovation Conference<br><strong>Country:</strong> ROC<br><strong>Awarded by:</strong> Shih Chien University</div>
   </div>
 
   <div id="teaching" class="content">
     <h2>Teaching</h2>
-    <table>
-      <tr><th>Semester</th><th>Course Title</th></tr>
-      <tr><td>1132</td><td>Introduction to AI</td></tr>
-      <tr><td>1132</td><td>Introduction to Business AI</td></tr>
-      <tr><td>1132</td><td>Business Data Forecasting and Decision-Making</td></tr>
-      <tr><td>1132</td><td>Programming</td></tr>
-      <!-- Add more rows as needed -->
-    </table>
+    <div class="item-block"><strong>1132:</strong> Introduction to AI, Business AI, Forecasting & Decision-Making, Programming</div>
+    <div class="item-block"><strong>1131:</strong> Intro to Business Database, Programming</div>
+    <div class="item-block"><strong>1122:</strong> Business AI, Forecasting & Decision-Making, Programming</div>
+    <div class="item-block"><strong>1121:</strong> Intro to Business Database, Programming</div>
+    <div class="item-block"><strong>1112:</strong> Introduction to AI, Market Research, Data Prediction & Intelligent Decision-Making</div>
+    <div class="item-block"><strong>1111:</strong> Database & Data Warehousing</div>
   </div>
 
   <div id="research" class="content">
     <h2>Research</h2>
-    <p><strong>Journal Papers:</strong></p>
-    <ul>
-      <li>2015 - "An Integraged Model Combined ARIMA, EMD with SVR for Stock Indices Forecasting", SCI, IJ on AI Tools</li>
-      <li>2015 - "Applying the Hybrid Model of EMD, PSR, and ELM to Exchange Rates Forecasting", SSCI, Computational Economics</li>
-      <!-- Add more entries as needed -->
-    </ul>
-    <p><strong>Conference Papers:</strong></p>
-    <ul>
-      <li>2024 - "Predicting the Impact of ESG Factors...", iCIMKC 2024, Lin, Han-Chou</li>
-      <li>2022 - "Exploring Competency Differences...", 2022 South Alliance IR Conference</li>
-      <!-- Add more entries as needed -->
-    </ul>
+    <p><strong>Selected Journal Papers:</strong></p>
+    <div class="item-block">2015 - "An Integrated Model Combined ARIMA, EMD with SVR...", SCI, IJ on AI Tools</div>
+    <div class="item-block">2015 - "Applying the Hybrid Model of EMD, PSR, and ELM...", SSCI, Computational Economics</div>
+    <div class="item-block">2012 - "Combining AI with Non-linear Processing...", EI, IJ Digital Content</div>
+    <p><strong>Selected Conference Papers:</strong></p>
+    <div class="item-block">2024 - "Predicting the Impact of ESG Factors...", iCIMKC 2024</div>
+    <div class="item-block">2022 - "Fit Between Interest and Department...", South Alliance IR Conference</div>
+    <div class="item-block">2019 - "Prediction on Stock Market...", IC3 2019</div>
   </div>
 
   <div id="patents" class="content">
     <h2>Patents</h2>
-    <table>
-      <tr><th>Type</th><th>Date</th><th>Title</th><th>Patent No.</th><th>Country</th><th>Inventors</th><th>Owner</th></tr>
-      <tr><td>Utility</td><td>2019/04/09</td><td>Blind Spot Warning Device</td><td>M584758</td><td>ROC</td><td>Lu, Lin, Wu, Ching, Lin</td><td>Ching, Ya-Chi</td></tr>
-      <tr><td>Utility</td><td>2018/08/15</td><td>Multi-function Perception Control Device</td><td>M573846</td><td>ROC</td><td>Chien, Sung, Lin, Hsu, Tseng</td><td>Fo Guang University</td></tr>
-    </table>
+    <div class="item-block"><strong>Type:</strong> Utility<br><strong>Date:</strong> 2019/04/09<br><strong>Title:</strong> Blind Spot Warning Device<br><strong>No.:</strong> M584758<br><strong>Country:</strong> ROC<br><strong>Inventors:</strong> Lu, Lin, Wu, Ching, Lin<br><strong>Owner:</strong> Ching, Ya-Chi</div>
+    <div class="item-block"><strong>Type:</strong> Utility<br><strong>Date:</strong> 2018/08/15<br><strong>Title:</strong> Multi-function Perception Control Device<br><strong>No.:</strong> M573846<br><strong>Country:</strong> ROC<br><strong>Inventors:</strong> Chien, Sung, Lin, Hsu, Tseng<br><strong>Owner:</strong> Fo Guang University</div>
   </div>
 
   <script>
